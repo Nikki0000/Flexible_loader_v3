@@ -6,7 +6,7 @@ from sqlalchemy.orm import sessionmaker
 app = Flask(__name__)
 
 # Подключение к базе данных
-db_connection = 'postgresql://savodyarkin_n:RK2JG7p9svgajxX6pyG3@172.27.10.11:6432/pharma-demo'
+db_connection = 'Подключение к БД'
 engine = get_engine(db_connection)
 SessionFactory = sessionmaker(bind=engine)
 
