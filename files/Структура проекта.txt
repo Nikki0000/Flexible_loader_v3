@@ -1,0 +1,28 @@
+/your_project/
+│
+├── venv/
+├── files/
+├── models/
+│   ├── __init__.py
+│   ├── model_base.py
+│   ├── question.py
+│   ├── question_configuration.py
+│   ├── question_answer.py
+│   ├── questionnaire.py
+│   ├── questionnaire_header.py
+│   ├── questionnaire_to_task_type.py
+│   ├── questionnaire_to_task_type_specialization.py
+│   ├── specialization.py
+│   ├── task_type.py
+│   
+├── services/
+│   └── usual_questionnaire_service.html
+│   
+├── static/
+│   ├── styles.css
+│   └── scripts.js
+│
+├── templates/
+│   └── index.html
+│
+├── app.py - запуск приложения

@@ -1,0 +1,85 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.14">
+  <diagram name="Страница — 1" id="nufodS5jt1-LSLAKg5Ph">
+    <mxGraphModel dx="1311" dy="814" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="JHAfzec8ck0cFMgluabL-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="JHAfzec8ck0cFMgluabL-1" target="JHAfzec8ck0cFMgluabL-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JHAfzec8ck0cFMgluabL-1" value="Start" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="20" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JHAfzec8ck0cFMgluabL-2" value="Ввод данных пользователем.&lt;div&gt;Заполнение необходимых полей&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="315" y="130" width="230" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="JHAfzec8ck0cFMgluabL-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="JHAfzec8ck0cFMgluabL-3" target="JHAfzec8ck0cFMgluabL-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="170" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="180" y="350" />
+              <mxPoint x="180" y="170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JHAfzec8ck0cFMgluabL-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="JHAfzec8ck0cFMgluabL-3" target="JHAfzec8ck0cFMgluabL-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JHAfzec8ck0cFMgluabL-3" value="Проверка заполненных полей на правильность (клиентская валидация).&lt;br&gt;Корректно?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="260" width="183" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="JHAfzec8ck0cFMgluabL-4" value="нет" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="300" y="310" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JHAfzec8ck0cFMgluabL-6" value="да" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="440" y="418" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JHAfzec8ck0cFMgluabL-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="JHAfzec8ck0cFMgluabL-7" target="JHAfzec8ck0cFMgluabL-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JHAfzec8ck0cFMgluabL-7" value="Отправка данных на сервер" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="356.5" y="480" width="150" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="JHAfzec8ck0cFMgluabL-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="JHAfzec8ck0cFMgluabL-8" target="JHAfzec8ck0cFMgluabL-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JHAfzec8ck0cFMgluabL-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="JHAfzec8ck0cFMgluabL-8" target="JHAfzec8ck0cFMgluabL-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JHAfzec8ck0cFMgluabL-8" value="Проверка данных на стороне сервера (Серверная проверка). Корректно?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="331.5" y="585" width="200" height="185" as="geometry" />
+        </mxCell>
+        <mxCell id="JHAfzec8ck0cFMgluabL-9" value="нет" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="290" y="648" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JHAfzec8ck0cFMgluabL-10" value="сообщение об ошибке, откат транзакций" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="648" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JHAfzec8ck0cFMgluabL-12" value="да" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="440" y="768" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JHAfzec8ck0cFMgluabL-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="JHAfzec8ck0cFMgluabL-13" target="JHAfzec8ck0cFMgluabL-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JHAfzec8ck0cFMgluabL-13" value="Запрос к БД" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="356.5" y="798" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JHAfzec8ck0cFMgluabL-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="JHAfzec8ck0cFMgluabL-14" target="JHAfzec8ck0cFMgluabL-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JHAfzec8ck0cFMgluabL-14" value="Логирование" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="356.5" y="900" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JHAfzec8ck0cFMgluabL-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="JHAfzec8ck0cFMgluabL-15" target="JHAfzec8ck0cFMgluabL-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JHAfzec8ck0cFMgluabL-15" value="Ответ, уведомление о результате" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="371.5" y="990" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JHAfzec8ck0cFMgluabL-16" value="End" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="371.5" y="1090" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

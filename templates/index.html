@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Загрузка данных анкеты</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<h1>Загрузка данных анкеты</h1>
+
+<form id="questionnaireForm" action="{{ url_for('submit') }}" method="POST">
+    <h2>Анкета</h2>
+    <label for="questionnaireName">Название анкеты:</label>
+    <input type="text" id="questionnaireName" name="questionnaireName" required>
+
+    <h2>Вопросы</h2>
+    <div id="questionsContainer">
+        <div class="question-block">
+            <label for="questionText0">Текст вопроса:</label>
+            <input type="text" id="questionText0" name="questions[0][text]" required>
+
+            <label for="headerSelect0">Выберите заголовок:</label>
+            <select id="headerSelect0" name="questions[0][header]" class="headerSelect" required>
+                <option value="" disabled selected>Выберите заголовок</option>
+                {% for header in headers %}
+                <option value="{{ header.Id }}">{{ header.Name }}</option>
+                {% endfor %}
+                <option value="other">Другое</option>
+            </select>
+
+            <input type="text" id="headerText0" name="questions[0][customHeader]" class="headerText" placeholder="Введите заголовок" style="display: none;">
+
+            <label for="answerType0">Тип ответа:</label>
+            <select id="answerType0" name="questions[0][answerType]" class="answerTypeSelect" required>
+                <option value="" disabled selected>Выберите тип ответа</option>
+                <option value="3">Числовой ответ</option>
+                <option value="4">Выбор варианта ответа</option>
+                <option value="5">Текстовый ответ</option>
+            </select>
+
+            <div class="answer-options-block" id="answerOptions0" style="display: none;">
+                <label>Варианты ответа:</label>
+                <div class="answer-options-container" id="answerOptionsContainer0">
+                    <div class="answer-option">
+                        <input type="text" name="questions[0][options][]" placeholder="Введите вариант ответа" required>
+                    </div>
+                </div>
+                <button type="button" class="add-option-button">Добавить вариант</button>
+            </div>
+        </div>
+    </div>
+
+    <button type="button" id="addQuestionButton" class="add-question">Добавить вопрос</button>
+
+    <h2>Типы задач</h2>
+    <button id="toggleTaskTypes" type="button">Показать типы задач</button>
+
+    <div id="taskTypesBlock" style="display: none;">
+        <label>Выберите типы задач:</label>
+        <div id="taskTypesContainer">
+            {% for task_type in task_types %}
+            <div class="checkbox-block">
+                <input type="checkbox" id="taskType{{ task_type.Id }}" name="taskTypes[]" value="{{ task_type.Id }}">
+                <label for="taskType{{ task_type.Id }}">{{ task_type.Name }}</label>
+            </div>
+            {% endfor %}
+        </div>
+        <p id="selectedCount">Выбрано 0 типов задач</p>
+    </div>
+
+    <h2>Добавить связь со специализацией</h2>
+    <!--<p>Релевантно, для тех случаев, если выбранные типы задач, подразумевают связку со специльностью (например "Визит к врачу")</p>-->
+    <div id="specializationContainer">
+        <div class="specialization-block" id="specializationBlock0">
+            <label for="specializationSelect0">Выберите специализацию 1:</label>
+            <select id="specializationSelect0" name="specialization[]" required>
+                <option value="" disabled selected>Выберите специализацию</option>
+                {% for specialization in specializations %}
+                <option value="{{ specialization.Id }}">{{ specialization.Name }}</option>
+                {% endfor %}
+            </select>
+        </div>
+    </div>
+    <button type="button" id="addSpecializationButton" class="add-specialization">Добавить специализацию</button>
+
+
+    <button type="submit">Загрузить данные</button>
+</form>
+
+<script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>
